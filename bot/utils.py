@@ -6,7 +6,7 @@ from .models import EventSpec, Outcome
 
 def get_user_display(username: str | None, first_name: str | None, user_id: int) -> str:
     if username:
-        return f"@{username}"
+        return f"{username}"
     if first_name:
         return first_name
     return f"User {user_id}"
